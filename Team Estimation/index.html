@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Priorisierungsspiel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-section">
+    <h1>Priorisierungsspiel</h1>
+    
+    <!-- Kartenstapel -->
+    <div id="card-pile">
+      <h3>Kartenstapel</h3>
+      <ul id="pile"></ul>
+    </div>
+    
+    <!-- Spielbrett -->
+    <div id="game-board">
+      <h3>Matrix zur Priorisierung</h3>
+      <div class="matrix" id="matrix">
+        <div class="cell" data-prio="must" ondrop="dropCard(event)" ondragover="allowDrop(event)">
+          Must-Have
+        </div>
+        <div class="cell" data-prio="should" ondrop="dropCard(event)" ondragover="allowDrop(event)">
+          Should-Have
+        </div>
+        <div class="cell" data-prio="could" ondrop="dropCard(event)" ondragover="allowDrop(event)">
+          Could-Have
+        </div>
+        <div class="cell" data-prio="wont" ondrop="dropCard(event)" ondragover="allowDrop(event)">
+          Won't-Have
+        </div>
+      </div>
+    </div>
+
+    <!-- Priorisierung beenden -->
+    <button id="end-prioritization">Priorisierung beendet</button>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</body>
+</html>

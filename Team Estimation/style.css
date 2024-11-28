@@ -1,0 +1,74 @@
+/* Allgemeines Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+    background-color: #f4f4f9;
+  }
+  
+  /* Karten */
+  #pile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  #pile li {
+    margin: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    cursor: grab;
+    list-style: none;
+  }
+  
+  /* Matrix */
+  .matrix {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 300px;
+    border: 2px solid #333333;
+    padding: 10px;
+  }
+  
+  .cell {
+    background-color: #f9f9f9;
+    border: 2px dashed #333333;
+    padding: 20px;
+    border-radius: 8px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .cell:hover {
+    background-color: #e3e3e3;
+  }
+  
+  /* Drag-Style */
+  .dragging {
+    opacity: 0.5;
+    border: 2px dashed #000000;
+  }
+  
+  /* Button */
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
